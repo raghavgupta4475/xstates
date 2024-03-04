@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './App.css';
 
 const App = () => {
   const [countries, setCountries] = useState([]);
@@ -67,7 +68,7 @@ const App = () => {
         ))}
       </select>
       {selectedCity && (
-        <p>You Selected {selectedCity}, {selectedState}, {selectedCountry}</p>
+        <div className='location-container'><h6>You Selected</h6> <h4>{selectedCity}</h4>,<p> {selectedState}, {selectedCountry}</p></div>
       )}
     </div>
   );
