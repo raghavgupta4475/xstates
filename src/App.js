@@ -68,7 +68,7 @@ const App = () => {
         ))}
       </select>
       {selectedCity && (
-        <div className='location-container'><h6>You Selected</h6> <h4>{selectedCity}</h4>,<p> {selectedState}, {selectedCountry}</p></div>
+        <div className='location-container'><h6>You Selected</h6> <h4>{selectedCity}</h4><p>,</p><p> {selectedState}, {selectedCountry}</p></div>
       )}
     </div>
   );
